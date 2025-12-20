@@ -50,7 +50,6 @@
 
 html {
     scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
 }
 
 body {
@@ -218,7 +217,6 @@ body {
     padding: var(--space-2xl);
     position: relative;
     overflow: hidden;
-    scroll-snap-align: start;
 }
 
 .hero::before {
@@ -397,11 +395,6 @@ body {
 .section {
     padding: var(--space-2xl) var(--space-lg);
     position: relative;
-    min-height: 100vh;
-    scroll-snap-align: start;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .container {
