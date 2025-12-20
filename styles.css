@@ -7,16 +7,16 @@
     --bg-secondary: #12121a;
     --bg-card: rgba(255, 255, 255, 0.03);
     --bg-glass: rgba(255, 255, 255, 0.05);
-    
+
     --text-primary: #ffffff;
     --text-secondary: #a0a0b0;
     --text-muted: #6a6a7a;
-    
+
     --accent-primary: #8b5cf6;
     --accent-secondary: #06b6d4;
     --accent-gradient: linear-gradient(135deg, #8b5cf6 0%, #06b6d4 100%);
     --accent-glow: rgba(139, 92, 246, 0.4);
-    
+
     /* Spacing */
     --space-xs: 0.5rem;
     --space-sm: 1rem;
@@ -24,11 +24,11 @@
     --space-lg: 2rem;
     --space-xl: 3rem;
     --space-2xl: 5rem;
-    
+
     /* Typography */
     --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
     --font-mono: 'Fira Code', monospace;
-    
+
     /* Effects */
     --border-radius: 16px;
     --border-radius-sm: 8px;
@@ -40,7 +40,9 @@
 /* ===========================
    Reset & Base Styles
    =========================== */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -48,6 +50,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
 }
 
 body {
@@ -96,10 +99,13 @@ body {
 }
 
 @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0) translateX(0);
         opacity: 0.3;
     }
+
     50% {
         transform: translateY(-100px) translateX(50px);
         opacity: 0.6;
@@ -212,6 +218,7 @@ body {
     padding: var(--space-2xl);
     position: relative;
     overflow: hidden;
+    scroll-snap-align: start;
 }
 
 .hero::before {
@@ -278,8 +285,15 @@ body {
 }
 
 @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
 }
 
 .hero-tagline {
@@ -354,8 +368,15 @@ body {
 }
 
 @keyframes bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(10px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
 }
 
 @keyframes fadeInUp {
@@ -363,6 +384,7 @@ body {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -375,6 +397,11 @@ body {
 .section {
     padding: var(--space-2xl) var(--space-lg);
     position: relative;
+    min-height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .container {
@@ -443,7 +470,9 @@ body {
 }
 
 @keyframes rotate {
-    to { transform: rotate(360deg); }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .avatar-placeholder {
@@ -831,19 +860,19 @@ kbd {
     .navbar {
         padding: var(--space-sm);
     }
-    
+
     .nav-links {
         display: none;
     }
-    
+
     .hero {
         padding: var(--space-lg);
     }
-    
+
     .section {
         padding: var(--space-xl) var(--space-sm);
     }
-    
+
     .about-stats {
         flex-wrap: wrap;
     }
