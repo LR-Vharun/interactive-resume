@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L.R.Vharun Kumaar | Developer & AI Enthusiast</title>
+    <meta name="description" content="Interactive resume of L.R.Vharun Kumaar - Developer specializing in AI Agents, Java, and Full Stack Development">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-particles" id="particles"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-logo">VK</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="game-btn" id="openGame">🎮 Play Game</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">
+                <span class="name-text">L.R.Vharun Kumaar</span>
+            </h1>
+            <div class="hero-title">
+                <span class="title-prefix">I'm a</span>
+                <span class="typed-text" id="typed"></span>
+                <span class="cursor">|</span>
+            </div>
+            <p class="hero-tagline">Crafting intelligent solutions with code & creativity</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-card glass-card">
+                    <div class="about-avatar">
+                        <div class="avatar-ring"></div>
+                        <div class="avatar-placeholder">VK</div>
+                    </div>
+                    <div class="about-text">
+                        <p class="about-intro">
+                            Hey there! I'm <strong>Vharun</strong>, a passionate developer who loves pushing the boundaries of what's possible with code.
+                        </p>
+                        <p>
+                            I specialize in building <span class="highlight">AI-powered applications</span> and crafting elegant solutions to complex problems. 
+                            When I'm not coding, you'll find me exploring new technologies, contributing to open source, or experimenting with 
+                            <span class="highlight">Anti Gravity</span> – yes, that's as cool as it sounds! 🚀
+                        </p>
+                        <p>
+                            My journey in tech started with curiosity and has evolved into a relentless pursuit of innovation. 
+                            I believe in writing clean, efficient code that not only works but inspires.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <span class="stat-number">7+</span>
+                                <span class="stat-label">Technologies</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">∞</span>
+                                <span class="stat-label">Curiosity</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">24/7</span>
+                                <span class="stat-label">Learning Mode</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card glass-card" data-skill="ai">
+                    <div class="skill-icon">🤖</div>
+                    <h3>AI Agents</h3>
+                    <p>Building intelligent autonomous systems</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass-card" data-skill="java">
+                    <div class="skill-icon">☕</div>
+                    <h3>Java</h3>
+                    <p>Enterprise-grade applications</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass-card" data-skill="web">
+                    <div class="skill-icon">🌐</div>
+                    <h3>HTML & CSS</h3>
+                    <p>Beautiful, responsive interfaces</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="88"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass-card" data-skill="db">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>JDBC & SQL</h3>
+                    <p>Database design & optimization</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80"></div>
+                    </div>
+                </div>
+                <div class="skill-card glass-card featured" data-skill="antigravity">
+                    <div class="skill-icon">🚀</div>
+                    <h3>Anti Gravity</h3>
+                    <p>Defying conventional limits</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="100"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <p class="section-subtitle">Check out some of my recent work</p>
+            <div class="projects-grid">
+                <article class="project-card glass-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span>🤖</span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Project →</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI Task Assistant</h3>
+                        <p>An intelligent agent that automates daily tasks using natural language processing and machine learning.</p>
+                        <div class="project-tags">
+                            <span class="tag">AI Agents</span>
+                            <span class="tag">Java</span>
+                            <span class="tag">SQL</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card glass-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span>🏥</span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Project →</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Healthcare Platform</h3>
+                        <p>A comprehensive healthcare management system with video consultations and appointment booking.</p>
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JDBC</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card glass-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <span>⚡</span>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link">View Project →</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Anti Gravity Engine</h3>
+                        <p>Experimental project pushing the boundaries of physics simulation and real-time visualization.</p>
+                        <div class="project-tags">
+                            <span class="tag">Anti Gravity</span>
+                            <span class="tag">Java</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-subtitle">Have a project in mind? Let's make it happen!</p>
+            <div class="contact-content">
+                <div class="contact-card glass-card">
+                    <div class="contact-links">
+                        <a href="mailto:vharun@example.com" class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <span class="contact-text">vharun@example.com</span>
+                        </a>
+                        <a href="https://github.com/vharun" target="_blank" class="contact-item">
+                            <span class="contact-icon">💻</span>
+                            <span class="contact-text">github.com/vharun</span>
+                        </a>
+                        <a href="https://linkedin.com/in/vharun" target="_blank" class="contact-item">
+                            <span class="contact-icon">💼</span>
+                            <span class="contact-text">linkedin.com/in/vharun</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Crafted with 💜 by L.R.Vharun Kumaar</p>
+        <p class="footer-sub">© 2024 • Powered by curiosity and caffeine ☕</p>
+    </footer>
+
+    <!-- Game Modal -->
+    <div class="game-modal" id="gameModal">
+        <div class="game-container glass-card">
+            <div class="game-header">
+                <h3>🐍 Snake Game</h3>
+                <button class="close-btn" id="closeGame">✕</button>
+            </div>
+            <div class="game-stats">
+                <span>Score: <strong id="score">0</strong></span>
+                <span>High Score: <strong id="highScore">0</strong></span>
+            </div>
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+            <div class="game-controls">
+                <p>Use <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd> or <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> to move</p>
+                <button class="btn btn-primary" id="startGame">Start Game</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
