@@ -395,6 +395,7 @@ body {
 .section {
     padding: var(--space-2xl) var(--space-lg);
     position: relative;
+    z-index: 1;
 }
 
 .container {
