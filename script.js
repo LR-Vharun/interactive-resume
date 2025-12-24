@@ -168,28 +168,4 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// ===========================
-// Email Copy Functionality
-// ===========================
-const copyEmailBtn = document.getElementById('copyEmailBtn');
-const emailLink = document.getElementById('emailLink');
 
-if (copyEmailBtn && emailLink) {
-    copyEmailBtn.addEventListener('click', () => {
-        const email = emailLink.getAttribute('href').replace('mailto:', '');
-        
-        navigator.clipboard.writeText(email).then(() => {
-            // Success feedback
-            const originalIcon = copyEmailBtn.innerHTML;
-            copyEmailBtn.innerHTML = '<span class="copy-icon">✓</span>';
-            copyEmailBtn.classList.add('copied');
-            
-            setTimeout(() => {
-                copyEmailBtn.innerHTML = originalIcon;
-                copyEmailBtn.classList.remove('copied');
-            }, 2000);
-        }).catch(err => {
-            console.error('Failed to copy email:', err);
-        });
-    });
-}
