@@ -729,7 +729,7 @@ body {
     transition: var(--transition-fast);
 }
 
-.contact-item:hover {
+a.contact-item:hover {
     background: rgba(139, 92, 246, 0.1);
     color: var(--text-primary);
 }
